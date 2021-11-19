@@ -1,0 +1,200 @@
+/* the styles for the elements */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.logo{
+	float:left;
+	margin-right: 1em;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 99%;
+	max-width: 960px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+html {
+	background-color: white;
+}
+/* the styles for the header */
+header {
+	border-bottom: 3px solid #931420;
+	padding: 1.5em 0.105% 2em;
+	background-image: linear-gradient(30deg, #f6bb73 25%, white);
+}
+header h2{
+	font-size: 170%;
+	color: #800000;
+}
+header h3{
+	font-size: 130%;
+	font-style: italic;
+}
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li {
+	float: left;
+	width: 13.334%;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul li a {
+	display: block;
+
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+#nav_menu ul li a.current{
+	color: yellow;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu li:hover > ul{
+	display: block
+}
+#nav_menu>ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* the styles for the section */
+.circle {
+	list-style-type: circle;
+}
+main section {
+	width: 54.6875%;
+	float: right;
+	padding-left: 2.84%;
+	padding-right: 2.84%;
+	padding-bottom: 20px;
+}
+aside {
+	width: 22.3959%;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+article {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article img {
+	float: right;
+	margin-top: 10px;
+	border: black solid 1px;
+	max-width: 40%;
+	min-width: 150px;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main section h2{
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+main section h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img{
+	padding-top: 1em;
+	padding-bottom: .5em;
+}
+main section p{
+	padding-bottom: .5em;
+}
+.quotes{
+	padding-left: 2em;
+	padding-right: 2em;
+	font-style: italic;
+}
+main section ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+main section li{
+	padding-bottom: .35em;
+}
+
+@media screen and (max-width: 959px){
+	section h1{
+		font-size: 135%;
+	}
+	section h2{
+		font-size: 120%;
+	}
+	section {
+		float: none;
+		width: 99%;
+	}
+	aside{
+		font-size: 120%;
+		float: none;
+		padding: 1em;
+		width: 99%;
+	}
+	article img {
+		max-width: 30%;
+	}
+}
+
+@media screen and (max-width: 767px){
+	header img {
+		float: none;
+		align-content: center;
+	}
+}
+
+a:focus {font-style: italic;}
+a:hover {font-style: italic;}
+/* the styles for the footer */
+footer {
+	background-color: #931420;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
